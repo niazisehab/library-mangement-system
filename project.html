@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Top Geek Project</title>
+   </head>
+   <link rel="stylesheet" href="project.css" />
+   <script src="project.js"></script>
+   <body>
+      <h1>GeekLib</h1>
+      <b style="font-size: 18px; font-family: sans-serif; font-weight: bold"
+         >Library item list
+      </b>
+      <table id="mytable" style="width: 100%;">
+         <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Edition</th>
+            <th>Actions</th>
+         </tr>
+      </table>
+      <button class="button button1" onclick="openForm()">Add Books</button>
+      <div class="form-popup" id="myForm">
+         <!-- <form class="signup-form" method="post"> -->
+         <!-- form header -->
+         <div class="form-header">
+            <b>Add New Book</b>
+         </div>
+         <!-- form body -->
+         <div class="form-body">
+            <!-- Firstname and Lastname -->
+            <div class="horizontal-group">
+               <div class="form-group left">
+                  <label for="name" class="label-title">Name </label>
+                  <input type="text" id="name" class="form-input" placeholder="Enter book name" required="required" /><br /><br/>
+                  <label for="author" class="label-title">Author</label>
+                  <input type="text" id="author" class="form-input" placeholder="Enter author name" required="required" />
+               </div>
+               <div class="form-group right">
+                  <label for="genre" class="label-title">Genre</label>
+                  <input type="text" id="genre" class="form-input" placeholder="Enter genre" required="required" /><br /><br/>
+                  <label for="edition" class="label-title">Edition</label>
+                  <input type="text" id="edition" class="form-input" placeholder="Enter edition" required="required" />
+               </div>
+            </div>
+            <button type="button" class="btn" onclick="closeForm()">Cancel</button>
+            <button type="button" class="btn" onclick="addHtmlTableRow();">
+               Add Book</input>
+         </div>
+      </div>
+      <div class="form-popup" id="myForm_edit" style="display: none;">
+      <!-- <form class="signup-form" method="post"> -->
+      <!-- form header -->
+      <div class="form-header">
+      <b>Edit Book Details</b>
+      </div>
+      <!-- form body -->
+      <div class="form-body">
+      <!-- Firstname and Lastname -->
+      <div class="horizontal-group">
+      <div class="form-group left">
+      <label for="name_edit" class="label-title">Name </label>
+      <input type="text" id="name_edit" class="form-input" placeholder="Enter book name" required="required" /><br /><br/>
+      <label for="author_edit" class="label-title">Author</label>
+      <input type="text" id="author_edit" class="form-input" placeholder="Enter author name" required="required" />
+      </div>
+      <div class="form-group right">
+      <label for="genre_edit" class="label-title">Genre</label>
+      <input type="text" id="genre_edit" class="form-input" placeholder="Enter genre" required="required" /><br /><br/>
+      <label for="edition_edit" class="label-title">Edition</label>
+      <input type="text" id="edition_edit" class="form-input" placeholder="Enter edition" required="required" />
+      </div>
+      </div>
+      <button type="button" class="btn" onclick="closeEdit()">Cancel</button>
+      <button type="button" class="btn" onclick="edit_text();">Edit</input>
+      </div>  
+   </body>
+</html>
